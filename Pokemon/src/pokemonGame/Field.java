@@ -1,11 +1,24 @@
+import java.util.ArrayList;
+
 package pokemonGame;
 
 public class Field {
 	
-	array = bench/arena;
+	Card[] bench = new Card[7];
+	
+	ArrayList hand = new ArrayList();
+	
+	
+	
 	
 	
 	public Field() {
+		
+		
+		
+	
+		
+		
 		// TODO Auto-generated constructor stub
 	}
 
