@@ -7,8 +7,14 @@ public class Field {
 	
 	ArrayList<Card> hand = new ArrayList<Card>();
 	
+	public ArrayList getHand()
+		return hand;
+	
+	public Card[] getBench()
+		return bench;
 	
 	
+}
 	
 	
 	public Field() {
