@@ -1,12 +1,11 @@
-import java.util.ArrayList;
-
 package pokemonGame;
+import java.util.ArrayList;
 
 public class Field {
 	
 	Card[] bench = new Card[7];
 	
-	ArrayList hand = new ArrayList();
+	ArrayList<Card> hand = new ArrayList<Card>();
 	
 	
 	
