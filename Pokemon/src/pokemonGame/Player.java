@@ -1,9 +1,11 @@
 package pokemonGame;
 
 public class Player {
-
-	public Player() {
-		// TODO Auto-generated constructor stub
+	
+	Field myField = new Field();
+	
+	public Player(Field field) {
+		myField = field;
 	}
 
 }
