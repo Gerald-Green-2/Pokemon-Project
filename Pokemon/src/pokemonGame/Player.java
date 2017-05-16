@@ -16,17 +16,22 @@ public class Player {
 	
 	public void playFromHand(int slot){
 		try{
-			myField.getBench()[0] = myField.getHand().get(slot);
-			myField.getHand().remove(slot);
+			for(int i = 1; i > 7; i++){
+				if(myField.getBench()[i] == null){
+					myField.getBench()[i] = myField.getHand().get(slot);
+					myField.getHand().remove(slot);
+				}
+			}
 		}
 		catch(ArrayIndexOutOfBoundsException e){
 			System.out.println("There are no spots open on your bench.");
 		}
 	}
 
-	public void benchToArena(){
+	public void benchToArena(int slot){
 		Card[] myBench = myField.getBench();
-		myBench.set();
+		myBench[0] = myBench[slot];
+		myBench[slot] = null;
 	}
 	
 }
