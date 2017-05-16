@@ -7,24 +7,18 @@ public class Field {
 	
 	ArrayList<Card> hand = new ArrayList<Card>();
 	
-	public ArrayList getHand()
+	public ArrayList<Card> getHand(){
 		return hand;
+	}
 	
-	public Card[] getBench()
+	public Card[] getBench(){
 		return bench;
-	
-	
-}
+	}
 	
 	
 	public Field() {
-		
-		
-		
-	
-		
-		
 		// TODO Auto-generated constructor stub
+		
 	}
 
 }

@@ -1,5 +1,7 @@
 package pokemonGame;
 
+import java.util.ArrayList;
+
 public class Player {
 	
 	Field myField = new Field();
@@ -13,17 +15,18 @@ public class Player {
 	}
 	
 	public void playFromHand(int slot){
-		myHand = myField.getHand();
-		myBench = myField.getBench();
 		try{
-			myBench.add(myHand[slot]);
-			myHand.remove(slot);
+			myField.getBench()[0] = myField.getHand().get(slot);
+			myField.getHand().remove(slot);
 		}
 		catch(ArrayIndexOutOfBoundsException e){
 			System.out.println("There are no spots open on your bench.");
 		}
 	}
 
-	
+	public void benchToArena(){
+		Card[] myBench = myField.getBench();
+		myBench.set();
+	}
 	
 }
