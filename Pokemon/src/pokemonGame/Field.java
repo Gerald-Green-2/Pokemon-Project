@@ -8,8 +8,14 @@ public class Field {
 	
 	ArrayList hand = new ArrayList();
 	
+	public ArrayList getHand()
+		return hand;
+	
+	public Card[] getBench()
+		return bench;
 	
 	
+}
 	
 	
 	public Field() {
