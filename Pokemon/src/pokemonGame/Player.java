@@ -29,9 +29,23 @@ public class Player {
 	}
 
 	public void benchToArena(int slot){
-		Card[] myBench = myField.getBench();
-		myBench[0] = myBench[slot];
-		myBench[slot] = null;
+		if(myField.getBench()[0] == null){
+			myField.getBench()[0] = myField.getBench()[slot];
+			myField.getBench()[slot] = null;
+		}
+		else{
+			System.out.println("There is already a pokemon in your Arena.");
+		}
+	}
+	
+	public void arenaToBench(int slot){
+		if(myField.getBench()[slot] == null){
+			myField.getBench()[slot] = myField.getBench()[0];
+			myField.getBench()[0] = null;
+		}
+		else{
+			System.out.println("There is already a pokemon in your Bench at this position.");
+		}
 	}
 	
 }
